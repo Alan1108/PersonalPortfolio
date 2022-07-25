@@ -8,11 +8,11 @@
         scroll-target="#scrolling-techniques-7"
         height="60"
       >
-        <v-toolbar-title class="text-2xl">
-          Alan IBM - Software Dev
+        <v-toolbar-title class="text-2xl" id="name">
+          Alan Ibm - Software Dev
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <div v-for="link in links" :key="link.title" data-app>
+        <div v-for="link in links" :key="link.title" data-app class="sticky">
           <v-btn icon router :to="link.route">
             <v-icon size="30">
               {{ link.icon }}
