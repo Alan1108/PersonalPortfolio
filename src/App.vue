@@ -1,27 +1,23 @@
 <template>
-  <v-main style="font-family: 'Roboto Slab', serif;">
+  <v-main style="font-family: 'Roboto Slab', serif">
     <BgAnimation />
-      <SideBar />
-    <v-container>
-      <v-col>
-        <AboutAndEducation/>
-      </v-col>
-    </v-container>
+    <NavBar />
+    <v-content>
+      <router-view></router-view>
+    </v-content>
   </v-main>
 </template>
 
 <script>
 import BgAnimation from "./components/BgAnimation";
-import SideBar from "./components/SideBar";
-import AboutAndEducation from "./components/AboutAndEducation.vue";
+import NavBar from "./components/NavBar.vue";
+
 export default {
   name: "App",
   components: {
     BgAnimation,
-    SideBar,
-    AboutAndEducation,
+    NavBar,
   },
-
   data: () => ({
     computed: {
       deviceHeight() {
