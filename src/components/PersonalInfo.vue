@@ -3,15 +3,17 @@
     <v-card shaped elevation="24" width="300">
       <v-card-title>
         <div>
-          <h3 class="text-center" ><b>Personal Info</b></h3>
+          <h3 class="text-center"><b>Personal Info</b></h3>
           <div class="justify-center">
             <v-list disabled>
               <v-list-item v-for="(info, key) in personal_info" :key="key">
                 <v-list-item-icon>
-                  <v-icon v-text="info.icon" style="color: #801336;" ></v-icon>
+                  <v-icon v-text="info.icon" style="color: #801336"></v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-list-item-title class="text-lg" > <b>{{info.info}}</b> {{info.value}}</v-list-item-title>
+                  <v-list-item-title class="text-lg">
+                    <b>{{ info.info }}</b> {{ info.value }}</v-list-item-title
+                  >
                 </v-list-item-content>
               </v-list-item>
             </v-list>

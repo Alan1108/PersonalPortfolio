@@ -1,18 +1,16 @@
 <template>
   <div class="about">
     <v-row class="flex justify-center">
-      <v-col class="w-auto " >
-        <PhotoAndQuote/>
+      <v-col class="w-auto">
+        <PhotoAndQuote />
       </v-col>
-      <v-col> <AboutMeComponent/> </v-col>
+      <v-col> <AboutMeComponent /> </v-col>
     </v-row>
     <v-row>
       <v-col>
-        <PersonalInfo class="pt-5 m-5 grid place-content-center"/>
+        <PersonalInfo class="pt-5 m-5 grid place-content-center" />
       </v-col>
-      <v-col>
-        
-      </v-col>
+      <v-col> </v-col>
     </v-row>
   </div>
 </template>
@@ -26,8 +24,8 @@ export default {
   components: {
     PhotoAndQuote,
     AboutMeComponent,
-    PersonalInfo
-},
+    PersonalInfo,
+  },
   setup() {},
 };
 </script>
